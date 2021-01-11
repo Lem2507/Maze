@@ -4,9 +4,9 @@ import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 @SuppressWarnings("serial")
 public class MazeGame extends JFrame {
- int sizeX=15;
- int sizeY=15;
- int cellSize=20;
+ int sizeX=100;
+ int sizeY=100;
+ int cellSize=100;
  Maze m1=new Maze(sizeX, sizeY);
  public MazeGame(){
      initUI();
@@ -17,6 +17,7 @@ public class MazeGame extends JFrame {
         public void run(){
             MazeGame mz=new MazeGame();
             mz.setVisible(true);
+            mz.setResizable(false);
    
         }
         });

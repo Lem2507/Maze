@@ -1,5 +1,6 @@
 package mazegame;
 public class Cell {
+	// dqsno, gore, lqvo, dolu
 byte[] walls={1,1,1,1};
 byte[] borders ={0,0,0,0};
 byte[] solution ={0,0,0,0};
