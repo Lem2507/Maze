@@ -163,12 +163,14 @@ public class MazeDraw extends JPanel implements KeyListener {
 		if (key.getKeyCode() == key.VK_DOWN || key.getKeyCode() == key.VK_S) {
 			obj.setPointY(obj.getPointY() + obj.getCellSize());
 			if (obj.getPointY() > obj.getOffsetY() + (obj.getCellSize() * m1.obj.getSizeY())) {
+				System.out.println("You've hit a lower wall!");
                 obj.setPointY(obj.getOldY());
             }
 			// За нагоре
 		} else if (key.getKeyCode() == key.VK_UP || key.getKeyCode() == key.VK_W) {
 			obj.setPointY(obj.getPointY() - obj.getCellSize());
 			if (obj.getPointY() < obj.getOffsetY()) {
+				System.out.println("You've hit an upper wall!");
                 obj.setPointY(obj.getOldY());
             }
 
@@ -176,12 +178,14 @@ public class MazeDraw extends JPanel implements KeyListener {
 		} else if (key.getKeyCode() == key.VK_LEFT || key.getKeyCode() == key.VK_A) {
 			obj.setPointX(obj.getPointX() - obj.getCellSize());
 			if (obj.getPointX() < obj.getOffsetX()) {
+				System.out.println("You've hit a left wall!");
                 obj.setPointX(obj.getOldX());
             }
 			// За надясно
 		} else if (key.getKeyCode() == key.VK_RIGHT || key.getKeyCode() == key.VK_D) {
 			obj.setPointX(obj.getPointX() + obj.getCellSize());
 			if (obj.getPointX() > obj.getOffsetX() + (obj.getCellSize() * m1.obj.getSizeX())) {
+				System.out.println("You've hit a right wall!");
                 obj.setPointX(obj.getOldX());
             }
 		} else if (key.getKeyCode() == key.VK_R) {

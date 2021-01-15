@@ -47,7 +47,6 @@ public class MazeGenerate {
 	public void generateMaze() {
 
 		Random rand = new Random();
-		System.out.println(obj.getSizeX() + " " + obj.getSizeY());
 		int x = rand.nextInt(obj.getSizeX());
 		int y = rand.nextInt(obj.getSizeY());
 
