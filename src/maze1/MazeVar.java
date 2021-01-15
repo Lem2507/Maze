@@ -4,9 +4,9 @@ package maze1;
 
 public class MazeVar {
     
-    private int sizeX = 10;
-    private int sizeY = 10;
-    private int cellSize = 30;
+    private int sizeX;
+    private int sizeY;
+    private int cellSize;
     private int offsetX = 10;
     private int offsetY = 10;
     private int pointX;
