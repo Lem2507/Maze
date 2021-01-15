@@ -4,8 +4,8 @@ import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 @SuppressWarnings("serial")
 public class MazeGame extends JFrame {
- int sizeX=100;
- int sizeY=100;
+ int sizeX=10;
+ int sizeY=10;
  int cellSize=100;
  Maze m1=new Maze(sizeX, sizeY);
  public MazeGame(){
